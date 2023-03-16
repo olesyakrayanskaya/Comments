@@ -49,6 +49,10 @@ body {
     margin-right: 40px;
 }
 
+.comments__day {
+    margin-right: 8px;
+}
+
 .comments__text {
     margin: 20px 0;
 }
@@ -63,8 +67,25 @@ body {
 .comments__icon {
     width: 18px;
     height: 18px;
-    margin-right: 20px;
     cursor: pointer;
+}
+
+.likes__wrapper {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+}
+
+.comments__icon_noliked,
+.comments__icon_liked {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hide {
+    display: none;
 }
 
 .form {
