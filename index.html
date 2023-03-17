@@ -12,80 +12,20 @@
 <body>
     <div class="container">
         <ul class="comments">
-            <li class="comments__item">
-                <div class="comments__header">
-                    <span class="comments__name">Имя Фамилия</span>
-                    <span class="comments__day">сегодня</span>
-                    <time datetime="2023-03-16T18:18">16.03.2023 18:18</time>
-                </div>
-                <p class="comments__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id sint voluptatem
-                    eaque et, beatae hic vero, repudiandae debitis, ex alias culpa eum commodi voluptas voluptatibus
-                    amet! Nam similique aut aspernatur facere quibusdam, saepe maiores culpa nesciunt, quis repellendus
-                    velit sapiente porro fugiat, dolores tenetur possimus assumenda esse eaque facilis expedita!</p>
-                <div class="comments__footer">
-                    <img class="comments__icon comments__icon_del" src="./icons-trash.svg" alt="del">
-                    <div class="likes__wrapper">
-                        <img class="comments__icon comments__icon_noliked" src="./icons-favorite-white.svg" alt="like">
-                        <img class="comments__icon comments__icon_liked hide" src="./icons-favorite-black.svg"
-                            alt="like">
-                    </div>
-                    <span class="comments__like-count">0</span>
-                </div>
-            </li>
-            <li class="comments__item">
-                <div class="comments__header">
-                    <span class="comments__name">Имя Фамилия</span>
-                    <span class="comments__day">сегодня</span>
-                    <time datetime="2023-03-16T18:18">16.03.2023 18:18</time>
-                </div>
-                <p class="comments__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id sint voluptatem
-                    eaque et, beatae hic vero, repudiandae debitis, ex alias culpa eum commodi voluptas voluptatibus
-                    amet! Nam similique aut aspernatur facere quibusdam, saepe maiores culpa nesciunt, quis repellendus
-                    velit sapiente porro fugiat, dolores tenetur possimus assumenda esse eaque facilis expedita!</p>
-                <div class="comments__footer">
-                    <img class="comments__icon comments__icon_del" src="./icons-trash.svg" alt="del">
-                    <div class="likes__wrapper">
-                        <img class="comments__icon comments__icon_noliked" src="./icons-favorite-white.svg" alt="like">
-                        <img class="comments__icon comments__icon_liked hide" src="./icons-favorite-black.svg"
-                            alt="like">
-                    </div>
-                    <span class="comments__like-count">0</span>
-                </div>
-            </li>
-            <li class="comments__item">
-                <div class="comments__header">
-                    <span class="comments__name">Имя Фамилия</span>
-                    <span class="comments__day">сегодня</span>
-                    <time datetime="2023-03-16T18:18">16.03.2023 18:18</time>
-                </div>
-                <p class="comments__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id sint voluptatem
-                    eaque et, beatae hic vero, repudiandae debitis, ex alias culpa eum commodi voluptas voluptatibus
-                    amet! Nam similique aut aspernatur facere quibusdam, saepe maiores culpa nesciunt, quis repellendus
-                    velit sapiente porro fugiat, dolores tenetur possimus assumenda esse eaque facilis expedita!</p>
-                <div class="comments__footer">
-                    <img class="comments__icon comments__icon_del" src="./icons-trash.svg" alt="del">
-                    <div class="likes__wrapper">
-                        <img class="comments__icon comments__icon_noliked" src="./icons-favorite-white.svg" alt="like">
-                        <img class="comments__icon comments__icon_liked hide" src="./icons-favorite-black.svg"
-                            alt="like">
-                    </div>
-                    <span class="comments__like-count">0</span>
-                </div>
-            </li>
         </ul>
-        <form class="form">
+        <form class="form" id="send-comment-form">
             <div class="form__inner">
                 <div class="form__name">
                     <label for="name">Ваше имя: </label>
-                    <input type="text" name="name" id="name" required>
+                    <input type="text" name="name" id="name" required minlength="2">
                 </div>
                 <p class="form__comments">
                     <textarea name="comment" id="comment" placeholder="Комментарий" rows="7"></textarea>
                 </p>
             </div>
             <div class="form__footer">
-                <input class="form__date" type="datetime-local" name="datetime" id="datetime">
-                <button class="form__btn" type="submit"><img class="form__icon" src="./icons-send.svg"
+                <input class="form__date" type="date" name="date" id="date">
+                <button class="form__btn" type="button"><img class="form__icon" src="./icons-send.svg"
                         alt="send"></button>
             </div>
         </form>

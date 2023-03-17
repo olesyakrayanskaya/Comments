@@ -47,10 +47,16 @@ body {
     font-size: 18px;
     font-weight: 500;
     margin-right: 40px;
+    display: block;
+    min-width: 200px;
 }
 
 .comments__day {
     margin-right: 8px;
+}
+
+.comments__time {
+    margin-left: 15px;
 }
 
 .comments__text {
@@ -86,6 +92,11 @@ body {
 
 .hide {
     display: none;
+}
+
+.comments__like-count {
+    padding-top: 3px;
+    font-size: 18px;
 }
 
 .form {
